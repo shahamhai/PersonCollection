@@ -6,7 +6,7 @@ import java.util.Observable;
 
 public class PersonCollection extends Observable {
 	private List<Person> persons = new ArrayList<Person>();
-	private Comparator<Person> comparator = new MyComparator();
+	private Comparator<Person> comparator = new MyComparator(); // create other comparator to change person value
 	
 	public void add(Person p){
 		persons.add(p);
